@@ -1,3 +1,11 @@
+
+# /*
+# * Copyright (c) 2024 IRANZI Dev
+# * All rights reserved.
+# * Conversations used in this project are licensed under the private property of IRANZI Dev and other contributors.
+# */
+
+
 import json
 from pathlib import Path
 
