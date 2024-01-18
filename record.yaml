@@ -1,0 +1,23 @@
+data.json:
+    $ref: ./data.json
+    $total_lines_count: '335,002'
+    $total_texts: '9,007,808'
+
+data-[IG]-[SANITIZED].json:
+    $ref: ./data-[IG]-[SANITIZED].json
+    $total_lines_count: '335,002'
+    $total_texts: '7,960,531'
+    
+data-[IG].json:
+    $ref: ./data-[IG].json
+    $total_lines_count: '113,474'
+    $total_texts: '4,662,907'
+
+data.txt:
+    $ref: ./data.txt
+    $total_lines_count: '68,175'
+    $total_texts: '1,582,684'
+data.csv:
+    $ref: ./data.csv
+    $total_lines_count: '34,676'
+    $total_texts: '1,204,798'
