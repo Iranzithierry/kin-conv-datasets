@@ -6,7 +6,7 @@ from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
 
-with open("data-[IG].json", "r", encoding="utf-8") as file:
+with open("data-[SANITIZED].json", "r", encoding="utf-8") as file:
     chat_data = json.load(file)
 
 def calculate_similarity(query, message):
@@ -34,8 +34,8 @@ def get_bot_response(query):
 @app.route('/', methods=['GET']) # type: ignore
 def index():
     if request.method == 'GET':
-            return render_template("index.html")
-            # return 'Welcome to the chatbot! Use POST method to send queries.'
+            # return render_template("index.html")
+            return 'Welcome to the chatbot! Use POST method to send queries.'
     
 @app.route('/prompt', methods=['POST','GET'])
 def chat():
@@ -58,4 +58,4 @@ def chat():
     })
 
 if __name__ == "__main__":
-    app.run(debug=True, port=20060)
+    app.run(debug=False, port=20060)
